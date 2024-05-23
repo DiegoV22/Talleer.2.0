@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Talleer._2._0.AbsoluteLayout"
+             Title="AbsoluteLayout">
+    <AbsoluteLayout>
+        <!-- Contenido desplazable -->
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+           
+       
+
+        <!-- Botón fijo en la esquina inferior derecha -->
+        <Button Text="GridLayout"
+                Clicked="IrGridLayoutBTN"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="1,1,AutoSize,AutoSize"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Margin="20" />
+        </ScrollView>
+    </AbsoluteLayout>
+</ContentPage>

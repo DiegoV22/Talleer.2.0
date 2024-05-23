@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Talleer._2._0.FlexLayout"
+             Title="FlexLayout">
+    <ContentPage.Resources>
+        <Style x:Key="ItemLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
+        <Style x:Key="ItemFlexLayoutStyle" TargetType="FlexLayout">
+            <Setter Property="Direction" Value="Row"/>
+            <Setter Property="AlignItems" Value="Center"/>
+            <Setter Property="Margin" Value="0,70,0,70"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <FlexLayout Direction="Column" AlignItems="Start" Wrap="Wrap" Padding="100,100,100,100">
+            <!-- Item 1 -->
+            <FlexLayout Style="{StaticResource ItemFlexLayoutStyle}">
+                <Image Source="p1.jpg" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Texto del primer elemento" Style="{StaticResource ItemLabelStyle}" />
+            </FlexLayout>
+
+            <!-- Item 2 -->
+            <FlexLayout Style="{StaticResource ItemFlexLayoutStyle}">
+                <Image Source="p2.jpg" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Texto del segundo elemento" Style="{StaticResource ItemLabelStyle}" />
+            </FlexLayout>
+
+            <!-- Item 3 -->
+            <FlexLayout Style="{StaticResource ItemFlexLayoutStyle}">
+                <Image Source="p3.jpg" WidthRequest="100" HeightRequest="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Texto del tercer elemento" Style="{StaticResource ItemLabelStyle}" />
+            </FlexLayout>
+
+            <!-- Add more items as needed -->
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

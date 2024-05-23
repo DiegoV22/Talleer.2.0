@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Talleer._2._0.StackLayou"
+             Title="StackLayou">
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Labels with different font sizes -->
+        <Label Text="Texto Grande" FontSize="Large" FontFamily="Calibri" />
+        <Label Text="Texto Mediano" FontSize="Medium" FontFamily="Times New Roman" />
+        <Label Text="Texto Pequeño" FontSize="Small" />
+        <Button
+    x:Name="Ir"
+    Text="Ir a Flexlayout" 
+    SemanticProperties.Hint="Redirecciona a Flexlayout"
+    Clicked="GoToSFlexLayoutButton"
+    />
+    </StackLayout>
+</ContentPage>
